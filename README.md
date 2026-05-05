@@ -121,8 +121,16 @@ On Windows, the script can automatically extract `MMAUTHTOKEN` from Firefox cook
 
 ## Running the viewer
 
-### Option A — PHP built-in server (preferred, simplest, no Apache needed)
+### Option A — Python 3.7+ server (preferred, simplest, the best)
 
+No symlinks or extra configuration required.
+
+```bash
+cd ~/mattermost_backup
+python mattermost.py
+```
+
+### Option B — PHP built-in server (simple, no Apache needed)
 No symlinks or extra configuration required.
 
 **Configure `mattermost.php`:**
@@ -144,7 +152,7 @@ Open **[http://localhost:8080/mattermost.php](http://localhost:8080/mattermost.p
 
 ---
 
-### Option B — Apache2
+### Option C — Apache2
 
 **Install Apache and PHP if needed:**
 
